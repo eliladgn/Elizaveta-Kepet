@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .redtext { color: #FF0000 }
+        .attention { color: #FF0000;font-style: italic }
+        .bigtext { font-size: large }
+        #bigtext { font-size: large }
+        P EM { color: #0000FF }
+    </style>
+    <title>Пример</title>
+</head>
+<body>
+    <h2>Создание стилей CSS</h2>
+	<hr>
+    <code>
+        <li>селектор { <br>
+            &nbsp;&nbsp;&nbsp;– атрибут-стиля 1: значение 1; <br>
+            &nbsp;&nbsp;&nbsp;– атрибут-стиля 2: значение 2; 
+        </li>
+        <li>}</li>
+        <li>селектор { атрибут-стиля 1: значение 1;}</li>
+    </code>
+    <hr>
+    <h3>Стиль переопределения тега</h3>
+    <code>
+        <li>P { color: #0000FF; }</li> 
+        <li>EM { <br>
+            &nbsp;&nbsp;&nbsp;– color: #00FF00;<br>
+            &nbsp;&nbsp;&nbsp;– font-weight: bold ;}
+        </li>
+        <li>BODY { <br>
+            &nbsp;&nbsp;&nbsp;– background-color: #000000; <br>
+            &nbsp;&nbsp;&nbsp;– color: #FFFFFF; }
+        </li>
+    </code>
+    <hr>
+    <a href="style1.html">Вариант 1</a>
+    <hr>
+    <h3>Стилевой класс</h3>
+    <code>
+        <li>&lt;p class="redtext"&gt;Это красный текст&lt;/p&gt;</li>
+        <li>
+            &lt;P&gt;&lt;STRONG CLASS="attention"&gt;Стилевой класс<br>
+            &nbsp;&nbsp;&nbsp;требует явной привязки атрибутом тега <br>
+            &nbsp;&nbsp;&nbsp;CLASS!&lt;/STRONG&gt;&lt;/P&gt;
+        </li>
+        <li>&lt;p class="redtext"&gt;Это еще один красный текст&lt;/p&gt;</li>
+        <li>
+            &lt;P&gt;&lt;STRONG CLASS="attention"&gt;Тут тоже текст такой <br>
+            &nbsp;&nbsp;&nbsp;же как и выше в классе attention &lt;/STRONG&gt;&lt;/P&gt;
+        </li>
+        <li>.redtext { color: #FF0000 }</li>
+        <li>
+            .attention { <br>
+            &nbsp;&nbsp;&nbsp;– color: #FF0000;<br>
+            &nbsp;&nbsp;&nbsp;– font-style: italic }
+        </li>
+    </code>
+    <hr>
+    <p class="redtext">Это красный текст</p>
+    <P><STRONG CLASS="attention">Стилевой класс 
+    требует явной привязки атрибутом тега 
+    CLASS!</STRONG></P>
+    <p class="redtext">Это еще один красный текст</p>
+    <P><STRONG CLASS="attention">Тут тоже текст такой 
+    же как и выше в классе attention </STRONG></P>
+    <hr>
+    <h3>Сложение стилей</h3>
+    <code>
+        <li>
+            .attention { <br>
+            &nbsp;&nbsp;&nbsp;– color: #FF0000; <br>
+            &nbsp;&nbsp;&nbsp;– font-style: italic } 
+        </li>
+        <li>.bigtext { font-size: large }</li>
+        <li>
+            &lt;STRONG CLASS="attention bigtext"&gt; Стилевой <br>
+            &nbsp;&nbsp;&nbsp;класс требует явной привязки атрибутом <br>
+            &nbsp;&nbsp;&nbsp;тега CLASS! &lt;/STRONG&gt;
+        </li>
+        <li>Первый: attention</li>
+        <li>Потом добавиться: bigtext</li>
+    </code>
+    <hr>
+    <STRONG CLASS="attention bigtext"> Стилевой 
+    класс требует явной привязки атрибутом 
+    тега CLASS! </STRONG>
+    <hr>
+    <h3>Именованный стиль</h3>
+    <code>
+        <li>#bigtext { font-size: large }</li>
+        <li>. . .</li>
+        <li>&lt;P ID="bigtext"&gt;Это большой текст.&lt;/P&gt;</li>
+        <li>Значение атрибута id уникально в пределах документа</li>
+    </code>
+    <hr>
+    <P ID="bigtext">Это большой текст.</P>
+    <hr>
+    <h3>Комбинированные стили</h3>
+    <code>
+        <li>P EM { color: #0000FF }</li>
+        <li>&lt;P&gt;&lt;EM&gt;Этот текст&lt;/EM&gt; станет синим.&lt;/P&gt; </li>
+        <li>&lt;EM&gt;А этот не станет.&lt;/EM&gt;</li>
+    </code>
+    <hr>
+    <P><EM>Этот текст</EM> станет синим.</P> 
+    <EM>А этот не станет.</EM>
+    <hr>
+    <code>
+        <li>&lt;ul class="menu"&gt;</li>
+        <li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="menuItemDefault"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 01&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+        </li>
+        <li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="menuItemDefault menuItemCurrent"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 02&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+        </li>
+        <li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="menuItemDefault menuItemSelected"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 03&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</li>
+        <li>&lt;/ul&gt;</li>
+        <br>
+        <li>.menu {some: styles;}</li>
+        <li>.menu .menuItemDefault {some: styles;}</li>
+        <li>.menu .menuItemCurrent {some: styles;}</li>
+        <li>.menu .menuItemSelected {some: styles;}</li>
+    </code>
+    <hr>
+    <a href="style2.html">Отработка примера</a>
+    <hr>
+    <code>
+        p.mini { <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;color: #FF0000; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;font-size: smaller; } <br>
+        p.sel strong { color: #FF0000; } <br>
+        ####################################<br>
+        p.mini { font-size: smaller; } <br>
+        p.mini, p.sel strong { color: #FF0000 }<br>
+        <br>
+        &lt;p class="mini"&gt;Этот текст красный и маленький&lt;/p&gt;<br>
+        &lt;p class="sel"&gt;Обычный текст &lt;strong&gt;красный <br>
+        текст&lt;/strong&gt;&lt;/p&gt;
+    </code>
+    <hr>
+    <p>Отработка примера: </p>
+    <a href="style3.html">1 Вариация</a><br>
+    <a href="style4.html">2 Вариация</a>
+    <hr>
+    <h3>Встроенные стили</h3>
+    <code>
+        &lt;P STYLE="font-size: smaller; font-style: italic"&gt;<br>
+        Маленький курсивчик.<br>
+        &lt;/P&gt;
+    </code>
+    <li>Применяется в самую последнюю очередь</li>
+    <li>В основном используется для задания стилей<br> 
+        форматированного текста полей ввода</li>
+    <hr>
+    <p STYLE="font-size: smaller; font-style: italic">Маленький курсивчик.</p>
+    <hr>
+    <h2>Таблицы стилей</h2>
+    <hr>
+    <li>Подключение файла внешней таблицы стилей</li>
+    <code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;LINK REL="stylesheet" HREF="адрес файла таблицы стилей" <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE="text/css"&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD&gt;
+    </code>
+    <li>Внутренность файла внешней таблицы стилей</li>
+    <code>
+        &nbsp;&nbsp;&nbsp;&nbsp;.redtext { color: #FF0000 }<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;#bigtext { font-size: large }<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;EM { color: #00FF00; font-weight: bold }<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;P EM { color: #0000FF }
+    </code>
+    <li>Импорт внешней таблицы стилей внутри CSS файла</li>
+    <code>
+        &nbsp;&nbsp;&nbsp;&nbsp;@import "/style/main.css" screen;
+    </code>
+    <hr>
+    <li>Могут присутствовать сразу несколько таблиц</li>
+    <code>
+        &nbsp;&nbsp;&nbsp;&lt;HEAD&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;LINK REL="stylesheet" HREF="styles1.css" TYPE="text/css" MEDIA=“screen”&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;LINK REL="stylesheet" HREF="styles2.css" TYPE="text/css" MEDIA=“print”&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;STYLE&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/STYLE&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . <br>
+        &nbsp;&nbsp;&nbsp;&lt;/HEAD&gt;
+    </code>
+    <hr>
+    <h3>Приоритеты выполнения стиля</h3>
+    <code>
+        <li>&lt;LINK REL="stylesheet" HREF="styles1.css" TYPE="text/css"&gt;</li>
+        &nbsp;&nbsp;&nbsp;– .redtext { color: #FF0000 } <br>
+        &nbsp;&nbsp;&nbsp;– #bigtext { font-size: large } <br>
+        &nbsp;&nbsp;&nbsp;– EM { color: #00FF00; font-weight: bold }<br>
+        <br>
+        <li>&lt;STYLE&gt;</li>
+        &nbsp;&nbsp;&nbsp;– .redtext { color: #0000FF } <br>
+        &nbsp;&nbsp;&nbsp;– EM { font-size: smaller } <br>
+        <li>&lt;/STYLE&gt;</li>
+        <br>
+        <li>&lt;P CLASS="redtext"&gt;Это красный текст.&lt;/P&gt; </li>
+        <li>&lt;P ID="bigtext" STYLE="color: #FFFF00"&gt;Это большой текст.&lt;/P&gt; </li>
+        <li>&lt;P&gt;&lt;EM&gt;Это курсив.&lt;/EM&gt;&lt;/P&gt;</li>
+    </code>
+    <hr>
+    <h3>Правила каскадности</h3>
+    <code>
+        &lt;LINK REL="stylesheet" HREF="styles1.css" TYPE="text/css"&gt;<br>
+        &lt;LINK REL="stylesheet" HREF="styles2.css" TYPE="text/css"&gt;
+    </code>
+    <li>Более конкретные стили имеют приоритет перед менее конкретными. </li>
+    <code>
+        <ul>
+            .class1 {color:#555}
+            p{color:#888}
+        </ul>
+    </code>
+    <li>Если к тегу привязаны несколько стилевых классов, то те, <br>
+    что указаны правее, имеют приоритет перед указанными левее. </li>
+    <code><ul>&lt;p class=“class_1” class=“class_2”&gt;&lt;/p&gt;</ul></code>
+</body>
+</html>

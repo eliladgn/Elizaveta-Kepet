@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style> @import "style.css";</style>
+    <title>Анкета</title>
+</head>
+<body>
+    <h1 align="center">Заполните анкету</h1>
+   <fieldset style="border: 3px solid gray;">
+        <legend>Личные данные</legend>
+        <label> <input type="text" required pattern="[А-Яа-яЁё]+" maxlength="25" placeholder="Фамилия" autofocus></label>
+        <label>text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)</label>
+        <br>
+        <label> <input type="text" required pattern="[А-Яа-яЁё]+" placeholder="Имя" maxlength="20"></label>
+        <label>text: Только кириллица, без пробелов, длина поля 20, обязательное поле)</label>
+        <br>
+        <label> <input type="text" required pattern="[А-Яа-яЁё]+" placeholder="Отчество" maxlength="24"></label>
+        <label>text: Только кириллица, без пробелов, длина поля 24, обязательное поле)</label>
+
+     <fieldset style="border: 3px solid gray;">
+        <legend>Паспортные данные</legend>
+        <label>text: Серия - только заглавные две латинские буквы с длинной 2 и максимальным количеством символов 2, количетсво букв не менее 2,</label>
+		<br>
+		<label>обязательное поле</label>
+		<br>
+        <label>text: Номер паспорта - только цифры c длинной 7 и максимальным количеством символов 7,количество цифр не менее 7, обязательное поле</label>
+		<br>
+        <input type="text" required pattern="[A-Z]{2}" maxlength="2"> <input type="text" required pattern="\d{6}" maxlength="6">
+    </fieldset>
+
+    <fieldset style="border: 3px solid gray;">
+        <legend>Дата рождения</legend>
+        <input type="number" min="-2.5" max="2.5" step="0.1">
+        <label>text: Год рождения 4-е цифры</label>
+        <br>
+            <select required>
+                <option>Январь</option>
+                <option>Февраль</option>
+                <option>Март</option>
+                <option>Апрель</option>
+                <option>Май</option>
+                <option>Июнь</option>
+                <option>Июль</option>
+                <option>Август</option>
+                <option>Сентябрь</option>
+                <option>Октябрь</option>
+                <option>Ноябрь</option>
+                <option>Декабрь</option>
+            </select>
+        <label>select: Месяц рождения</label>
+        <br>
+        <input type="number" min="1" max="31" step="1">
+        <label>number: Диапазон от 1 до 31 с шагом 1</label>
+		 </fieldset>
+            <select required>
+                <option>РБ</option>
+                <option>РФ</option>
+                <option>Украина</option>
+                <option>Казахстан</option>
+            </select>
+        <label>(Национальность - выбор одного значения из списка, обязательное поле)</label>
+        <br>
+        <label>Адрес:</label>
+		<br>
+		<textarea name="review" rows="2" cols="20"></textarea>
+	</fieldset>
+    <fieldset style="border: 3px solid gray;">
+        <legend>Интересы</legend>
+		 <fieldset style="border: 3px solid gray;">
+        <legend>array: Хобби</legend>
+        <label><input type="checkbox"> Рыбалка</label><br>
+        <label><input type="checkbox"> Астрономия</label><br>
+        <label><input type="checkbox"> Дайвинг</label><br>
+        <label><input type="checkbox"> Марки</label><br>
+  </fieldset>
+    <fieldset style="border: 3px solid gray;">
+        <legend>Домашние животные (возможность выбора нескольких вариантов)</legend>
+        <label>array: select multiple</label>
+		<br>
+        <select multiple size="12">
+			<optgroup label="Попугай">
+            <option>Волнистый</option>
+            <option>Ара</option>
+            <option>Неразлучник</option>
+			</optgroup>
+			<optgroup label="Рыба">
+            <option>Караси</option>
+            <option>Окуни</option>
+            <option>Осётр</option>
+			</optgroup>
+			<optgroup label="Птицы">
+            <option>Стая ворон</option>
+            <option>Аист</option>
+            <option>Археоптерикс</option>
+			</optgroup>
+        </select>
+    </fieldset>
+ </fieldset>
+     <fieldset style="border: 3px solid gray;">
+        <legend>Данные для входа и восстановления пароля</legend>
+        <label> <input type="text" pattern="[A-Za-z]{5,}"placeholder="Логин" required></label>
+        <label>text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле</label>
+        <br>
+        <label> <input type="password" placeholder="Пароль" pattern="[A-Za-z0-9]{10,}" required></label>
+        <label>password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение</label>
+    </fieldset>
+
+    <fieldset style="border: 3px solid gray;">
+        <legend>Координаты:</legend>
+        <input type="email" placeholder="введите адрес почты" required>
+        <label>email: проверка должна осуществляться при помощи новых атрибутов тега &lt;input&gt;</label>
+		<br>
+        <input type="url" placeholder="введите адрес сайта" required>
+        <label>url: проверка должна осуществляться при помощи новых атрибутов тега &lt;input&gt;</label>
+    </fieldset>
+
+    <fieldset style="border: 3px solid gray;">
+        <legend>Цифры</legend>
+        <input type="number" min="-2.5" max="2.5" step="0.1">
+        <label>number: Диапазон от -2.5 до 2.5 с шагом 0.1</label>
+        <br>
+        <input type="range" min="1" max="10">
+        <label>range: Максимальное 10, минимальное 1</label>
+    </fieldset>
+
+ <fieldset style="border: 3px solid gray;">
+        <legend>Кнопки управления</legend>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+		<br>
+		<table border="0">
+		<tr>
+		<td><img src="email.jpg"></td>
+        <td valign="top">- при нажатии на эту кнопку ничего не происходит</td>
+		</table>
+    </fieldset>
+</body>
+</html>
