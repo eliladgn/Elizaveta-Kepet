@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задание 3</title>
+	<style>
+		body {
+			height:1000px ;
+		}
+		.header{
+			text-align:center;
+			height:50px;
+			background:#c5f8c5
+		}
+		.menu{
+			width:100px;
+			height:550px;
+			background:#d8b4d3;
+			float:left;
+		}
+		.content{
+			background:#ccd9f6;
+			margin-left: 200px;	
+			margin-right: 200px;
+			width: 90%;
+            margin: 0 auto;
+		}
+		.banner{
+			width:200px;
+			height:550px;
+			background:#dc9ebe;
+			float:right;
+		}
+		.footer{
+			height:50px;
+			background:#a7c0f4;
+			clear:both;
+		}
+		.wrap{
+			background:#f5f5ee;
+		}
+		.clear{
+			background:#6c6a6a;
+            height: 10px;
+			clear:both;		
+		}
+        .body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            border: 1px solid black;
+			background:white;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        input[type="text"], select {
+            width: 80%;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+		.box{
+            width: 20%;
+            overflow-y: hidden;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .scroll-box {
+            width: 80%;
+            height: 60px;
+            overflow-y: auto;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .image-button {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+		.center{text-align:center;}
+		.top{vertical-align: top;}
+	</style>
+</head>
+<body>
+	<div class="header">Кепеть Елизавета 31-ИБ</div>
+	<div class="wrap">
+	<div class="menu">
+       <a href="zad_1.html">Задание 1</a><br>
+	   <a href="zad_1_2.html">Задание 1.2</a><br>
+	   <a href="zad_2.html">Задание 2</a><br>
+	   <a href="zad_3.html">Задание 3</a><br>
+	   <a href="zad_4.html">Задание 4</a><br>
+	   <a href="zad_5.html">Задание 5</a><br>
+      </div>
+	<div class="banner">banner</div>
+	<div class="content">
+<table>
+    <tr>
+        <td>Вопрос 1</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Вопрос 2</td>
+        <td colspan="3">
+            <select>
+                <option>Ответ 2.1</option>
+                <option>Ответ 2.2</option>
+                <option>Ответ 2.3</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Вопрос 3</td>
+        <td colspan="3">
+            <input type="checkbox"> Ответ 3.1
+            <input type="checkbox"> Ответ 3.2
+            <input type="checkbox"> Ответ 3.3
+        </td>
+    </tr>
+    <tr>
+        <td>Вопрос 4</td>
+        <td colspan="3"><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Вопрос 5</td>
+        <td colspan="3">
+            <input type="radio" name="q5"> Ответ 5.1
+            <input type="radio" name="q5"> Ответ 5.2
+            <input type="radio" name="q5"> Ответ 5.3
+        </td>
+    </tr>
+    <tr>
+        <td>Вопрос 6</td>
+        <td colspan="2"><input type="text"></td>
+        <td><button>Обзор</button></td>
+    </tr>
+    <tr>
+        <td>Вопрос 7</td>
+        <td colspan="3">
+			<div class="box">
+                Ответ 7.1<br>
+                Ответ 7.2<br>
+                Ответ 7.3<br>
+                Ответ 7.4
+			</div>
+		</td>
+    </tr>
+    <tr>
+        <td>Дополнительная информация</td>
+        <td colspan="3">
+            <div class="scroll-box">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </td>
+    </tr>
+	<tr class="center">
+<td colspan="4">
+    <button class="top">send</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="top">reset</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="top">кнопка <br>с рисунком</button>
+	</td>
+	</tr>
+</table>
+</div>
+	<div class="clear"></div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

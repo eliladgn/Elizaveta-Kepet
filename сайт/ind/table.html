@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+			width: 200px;
+        }
+		.center{text-align: center;}
+        .right{text-align: right;}
+        .top{vertical-align: top;}
+        .bottom{vertical-align: bottom;}
+    </style>
+</head>
+<body>
+    <table>
+            <caption>Заголовок таблицы</caption>
+        <tr height="40px">
+            <td colspan="2" class="center top">Заголовок 1</td>
+            <td class="center top">Заголовок 2</td>
+        </tr>
+        <tr height="40px">
+            <td class="top">Ячейка 1</td>
+            <td class="center">Ячейка 2</td>
+            <td class="top right">Ячейка 3</td>
+        </tr>
+        <tr>
+            <td class="top">Ячейка 4</td>
+            <td rowspan="3">
+              <table style="border:4px solid black;">
+                    <tr height="45px">
+						<td></td>
+                        <td colspan="2">Заголовок 1<br>Таблицы 2</td>
+                    </tr>
+                    <tr height="45px">
+                        <td>Заголовок 2<br>Таблицы 2</td>
+                        <td>Ячейка 1<br>Таблицы 2</td>
+                    </tr>
+                    <tr height="45px">
+                        <td>Заголовок 3<br>Таблицы 2</td>
+                        <td>Ячейка 2<br>Таблицы 2</td>
+                    </tr>
+               </table>
+            </td>
+            <td class="center right">Ячейка 6</td>
+        </tr>
+        <tr>
+            <td class="top">Ячейка 5</td>
+            <td class="bottom right">Ячейка 7</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+

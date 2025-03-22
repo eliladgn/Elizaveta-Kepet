@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контейнер Фреймов</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .frame {
+            border: 2px solid black;
+            padding: 5px;
+            position: relative;
+            overflow: auto;
+            resize: both;
+        }		
+        table {
+            width: 50%;
+            height: 50vh;
+            border-collapse: collapse;
+			margin: auto;
+			resize: both;
+			border-collapse: collapse;
+        }
+        td {
+            border: 2px solid black;
+            padding: 5px;
+            overflow: auto;
+			vertical-align: top;
+			text-align: center;
+	    }
+        #frame2 {
+            overflow: scroll;
+         }
+        #frame4 {
+		    collapse:2;
+            height: 50%;
+            overflow-y: scroll;
+			padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="frame1" colspan="2">
+                Фрейм 1<br>
+            </td>
+			<td id="frame4" style="width: 30%; height:30%" rowspan="3">Фрейм 4<br>
+                с вертикальной полосой прокрутки
+                <div style="height: 300%; width: 100%;"></div>
+            </td>
+		</tr>
+            <td id="frame2" style="width: 50%; height: 50%">Фрейм 2<br>
+			с горизонтальной и вертикальной полосами прокрутки
+			 <div style="height: 200%; width: 200%;"></div></td>
+            <td id="frame3">Фрейм 3</td>
+			</tr>
+        </tr>
+        <tr>
+            <td id="frame5" colspan="2" >Фрейм 5</td>
+        </tr>
+    </table>
+</body>
+</html>

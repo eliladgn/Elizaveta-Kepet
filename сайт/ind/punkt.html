@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>List Example</title>
+<style>
+.main-point {
+    font-weight: bold;
+    margin-top: 1em;
+}
+.sub-point {
+    margin-left: 1.5em;
+}
+.sub-sub-point {
+    margin-left: 3em;
+}
+.bullet-square {
+    list-style-type: square;
+}
+.bullet-circle {
+    list-style-type: circle;
+}
+</style>
+</head>
+<body>
+
+</style>
+</head>
+<body>
+
+<p class="main-point">5. Пункт 1</p>
+<p class="sub-point">Пункт 1.1</p>
+<p class="sub-sub-point">Определение пункта 1.1</p>
+<p class="sub-point">Пункт 1.2</p>
+<p class="sub-sub-point">Определение пункта 1.2</p>
+<p class="sub-point">Пункт 1.3</p>
+<p class="sub-sub-point">Определение пункта 1.3</p>
+<p class="sub-sub-point">Другое определение пункта 1.3</p>
+
+<p class="main-point">6. Пункт 2</p>
+<ul class="bullet-square">
+    <li>Пункт 2.1
+        <ol>
+            <li>Пункт 2.1.1
+                <ul class="bullet-circle">
+                    <li>Пункт 2.1.1.1</li>
+                    <li>Пункт 2.1.1.2</li>
+                    <li>Пункт 2.1.1.3</li>
+                </ul>
+            </li>
+            <li>Пункт 2.
+                <ol>
+                    <li>Пункт 2.1.2.1</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Пункт 2.2
+        <ul class="bullet-circle">
+            <li>Пункт 2.2.1</li>
+            <li>Пункт 2.2.2 ^</li>
+        </ul>
+    </li>
+</ul>
+
+<p class="main-point">7. Пункт 3</p>
+<hr>
+<a href="#end">Ссылка по которой осуществляется переход в конец страницы</a><br>
+<p id="link">Ссылка*</p>
+<a href="mailto:elizavetaladgina@gmail.com">Ссылка на адрес электронной почты</a><br>
+<p>Нажатием на картинку осуществляется загрузка сайта университета</p>
+    <a href="https://bspu.by/" target="_blank"><img src="foto.png" width="100" align="center"></a><br>
+<a href="../ind/naz.html">Ссылка на файл с расширением .html, подготовленный в первом задании</a><br>
+<a href="#top">Ссылка по которой осуществляется перреход в начало страницы</a><br>
+<a href="#link">Ссылка, по которой осуществляется переход к ссылке*</a><br>
+    <hr>
+
+    <p id="end">Конец страницы</p>
+</body>
+</html>

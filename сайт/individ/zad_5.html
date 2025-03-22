@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задание 5</title>
+	<style>
+		body {
+			height:1000px ;
+		}
+		.header{
+			text-align:center;
+			height:50px;
+			background:#c5f8c5
+		}
+		.menu{
+			width:200px;
+			height:400px;
+			background:#d8b4d3;
+			float:left;
+		}
+		.content{
+			background:#ccd9f6;
+			margin-left: 200px;	
+			margin-right: 200px;
+		}
+		.banner{
+			width:200px;
+			height:400px;
+			background:#dc9ebe;
+			float:right;
+		}
+		.footer{
+			height:50px;
+			background:#a7c0f4;
+			clear:both;
+		}
+		.wrap{
+			background:#f5f5ee;	
+		}
+		.clear{
+			background:#6c6a6a;
+            height: 10px;
+			clear:both;		
+		}
+		.body {
+            margin: 0;
+            padding: 0;
+        }
+        .frame {
+            border: 2px solid black;
+            padding: 5px;
+            position: relative;
+            overflow: auto;
+            resize: both;
+        }		
+        table {
+            width: 50%;
+            height: 50vh;
+            border-collapse: collapse;
+			margin: auto;
+			background:white;
+			border-collapse: collapse;
+        }
+        td {
+            border: 2px solid black;
+            padding: 5px;
+            overflow: auto;
+			vertical-align: top;
+			text-align: center;
+	    }
+        #frame2 {
+            overflow: scroll;
+         }
+        #frame4 {
+		    collapse:2;
+            height: 50%;
+            overflow-y: scroll;
+			padding: 5px;
+        }
+	</style>
+</head>
+<body>
+	<div class="header">Кепеть Елизавета 31-ИБ</div>
+	<div class="wrap">
+	<div class="menu">
+       <a href="zad_1.html">Задание 1</a><br>
+	   <a href="zad_1_2.html">Задание 1.2</a><br>
+	   <a href="zad_2.html">Задание 2</a><br>
+	   <a href="zad_3.html">Задание 3</a><br>
+	   <a href="zad_4.html">Задание 4</a><br>
+	   <a href="zad_5.html">Задание 5</a><br>
+      </div>
+	<div class="banner">banner</div>
+	<div class="content">
+    <table>
+        <tr>
+            <td id="frame1" colspan="2">
+                Фрейм 1<br>
+            </td>
+			<td id="frame4" style="width: 30%; height:30%" rowspan="3">Фрейм 4<br>
+                с вертикальной полосой прокрутки
+                <div style="height: 300%; width: 100%;"></div>
+            </td>
+		</tr>
+            <td id="frame2" style="width: 50%; height: 50%">Фрейм 2<br>
+			с горизонтальной и вертикальной полосами прокрутки
+			 <div style="height: 200%; width: 200%;"></div></td>
+            <td id="frame3">Фрейм 3</td>
+			</tr>
+        </tr>
+        <tr>
+            <td id="frame5" colspan="2" >Фрейм 5</td>
+        </tr>
+    </table>
+</div>
+	<div class="clear"></div>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>
